@@ -11,7 +11,7 @@
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1%;
-    margin-top: 44px;
+    margin-top: 45px;
 }
 
 .header__links-list {
@@ -38,7 +38,7 @@
 
 /*Логотип*/
 .header__logo {
-    margin-left: 36px;
+    margin-left: 40px;
 }
 
 .header__logo-image {
@@ -56,9 +56,9 @@
     width: 100%;
     font-style: normal;
     text-underline-position: under;
-    font-family: "Raleway";
     font-weight: normal;
     font-size: 18px;
+    margin-top: 5px;
     line-height: 24.3px;
     margin-left: auto;
     margin-right: 26px;
@@ -66,13 +66,48 @@
 
 /*COVER*/
 .cover {
-    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 92px;
     background-image: url(../images/cover.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
     width: 100%;
     height: 757px;
+}
+
+.cover__title {
+    margin: 162px auto 0;
+    display: flex;
+    color: #FFFFFF;
+    z-index: 2;
+    font-size: 100px;
+    /*letter-spacing: 60%;*/
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 30px;
+    max-width: 1000px;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    display: block;
+    margin-left: -60px;
+    margin-top: 10px;
+}
+
+.aligned-text_right {
+    display: block;
+    margin-top: 13px;
+    margin-left: -104px;
+}
+
+.letter-spacing_long {
+    margin-left: 32px;
 }
 
 .overlay {
@@ -83,4 +118,231 @@
     right: 0;
     background-color: #000000;
     opacity: 0.6;
+}
+
+.cover__description {
+    z-index: 2;
+    display: flex;
+    margin: 130px auto 0;
+}
+
+.cover__description-text {
+    word-spacing: 5px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 51px;
+    word-spacing: 18px;
+    margin-left: 28px;
+}
+
+.bet-button {
+    width: 256px;
+    height: 51px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 79px;
+}
+
+.bet-button:hover {
+    cursor: pointer;
+}
+
+/*LOTS*/
+.lots {
+    margin: 184px auto 0;
+    max-width: 1052px;
+}
+
+.lots__heading {
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+.lots__card-list {
+    margin: 27px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.lots__card-list-item {
+    display: block;
+    flex-grow: 1;
+    max-width: 334px;
+}
+.card-link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    width: 100%
+}
+
+.card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    height: 563px;
+    max-width: 334px;
+    justify-content: space-between;
+}
+
+.card__title {
+    z-index: 2;
+    max-width: 254px;
+    margin: 51px auto 0;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-transform: uppercase;
+}
+
+.card__text {
+    z-index: 2;
+    max-width: 254px;
+    margin: 0 auto 48px;
+    font-size: 20px;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__look-more-link {
+    display: block;
+
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+    text-underline-position: under;
+}
+
+/*ABOUT*/
+.about {
+    margin: 146px auto 0;
+    display: flex;
+    max-width: 1052px;
+}
+
+.about__left-column {
+    max-width: 334px;
+    width: 100%;
+}
+
+.about__right-column {
+    width: 100%;
+}
+
+.about__logo {
+    display: flex;
+    margin: 35px auto 0;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.about__logo-image {
+    margin: 0 auto;
+    width: 148px;
+    justify-content: center;
+
+}
+
+.about__title {
+    margin-top: 136px;
+    margin-left: 24px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about__text {
+    margin-top: 100px;
+    margin-left: 24px;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    margin: 180px auto 0;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.footer__address {
+    max-width: 240px;
+    width: 100%;
+    font-style: normal;
+    text-underline-position: under;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+.footer__list-links {
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.footer__list-social-icons {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.footer__list-links-item {
+    text-align: center;
+}
+
+.footer__list-links-link {
+    text-underline-position: under;
+}
+
+.footer__list-links-link_active {
+    text-decoration: none;
+}
+
+.footer__list-social-icon {
+
+}
+
+.footer__link-youTube {
+    display: block;
+    background-image: url(../images/yt.svg);
+    width: 48px;
+    height: 48px;
+    
+}
+
+.footer__link-VK {
+    display: block;
+    background-image: url(../images/vk.svg);
+    width: 48px;
+    height: 48px;
+}
+
+.footer__link-pinterest {
+    display: block;
+    background-image: url(../images/pinterest.svg);
+    width: 48px;
+    height: 48px;
 }

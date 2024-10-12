@@ -23,23 +23,95 @@
         <a class="header__logo-image"></a><!--В задании стояло сделать ссылкой без атрибута href.. Или нужно было подключить как img и обернуть в тег <a>?-->
       </div>
       <address class="header__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a></br>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a></br>
-        <p>наб. Принсенграхт 263-</br>265, Амстердам</p>
+        <a href="tel:+99995555555">+9 999 555 5555</a><br>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
       </address>
     </header>
 
-    <section class="cover">
-      <h1 class="cover__title">оно тебе надо</h1>
-      <div class="cover__description">
-        <h2 class="cover__description-text">Аукцион вещей, вкоторые никто не верил</h2>
-        <button class="bet-button"></button>
-      </div>
-      <div class="overlay"></div>
-    </section>
+    <main class="main">
+      <section class="cover">
+        <h1 class="cover__title"><span class="aligned-text">ОН<span class="letter-spacing_long">О</span></span> <span class="aligned-text_center"></br>ТЕБ<span class="letter-spacing_long">Е</span></span> <span class="aligned-text_right"></br></br>Н<span class="letter-spacing_long">А</span>ДО</span></h1>
+        <div class="cover__description">
+          <h2 class="cover__description-text">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</h2>
+          <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
+        </div>
+        <div class="overlay"></div>
+      </section>
 
-    <section class="lots"></section>
-    <section class="about"></section>
-    <footer class="footer"></footer>
+      <section class="lots">
+        <h3 class="lots__heading">ЛОТЫ</h3>
+        <ul class="lots__card-list">
+
+          <li class="lots__card-list-item">
+            <a class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h4 class="card__title">Фильм режиссёра, который бросил киношколу</h4>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </article>
+          </a>
+          </li>
+
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h4 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h4>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </article>
+            </a>
+          </li>
+
+          <li class="lots__card-list-item">
+            <a class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h4 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h4>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </article>
+            </a>
+          </li>
+
+        </ul>
+        <a class="lots__look-more-link" href="">посмотреть больше</a>
+      </section>
+
+      <section class="about">
+        <div class="about__left-column">
+          <div class="about__logo"><img class="about__logo-image" src="./images/logo-white.svg" alt="logo"></div>
+        </div>
+        <div class="about__right-column">
+          <h3 class="about__title">ОБ АУКЦИОНЕ</h3>
+          <p class="about__text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?<br><br>
+            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+
+      <address class="footer__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a><br>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
+      </address>
+
+      <ul class="footer__list-links">
+        <li class="footer__list-links-item"><a class="footer__list-links-link footer__list-links-link_active" href="">главная</a></li>
+        <li class="footer__list-links-item"><a class="footer__list-links-link" href="">посмотреть лоты</a></li>
+        <li class="footer__list-links-item"><a class="footer__list-links-link" href="">об аукционе</a></li>
+      </ul>
+
+      <ul class="footer__list-social-icons">
+        <li class="footer__list-social-icon"><a class="footer__link-youTube" href=""></a></li>
+        <li class="footer__list-social-icon"><a class="footer__link-VK" href=""></a></li>
+        <li class="footer__list-social-icon"><a class="footer__link-pinterest" href=""></a></li>
+      </ul>
+
+    </footer>
+
   </body>
 </html>
