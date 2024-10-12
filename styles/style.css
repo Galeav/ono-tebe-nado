@@ -1,1 +1,86 @@
-/* место для вашего кода */
+/*HEADER*/
+.header {
+    display: flex;
+    margin: 92px auto 0;
+    max-width: 1052px;
+}
+
+/*Меню*/
+.header__menu {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1%;
+    margin-top: 44px;
+}
+
+.header__links-list {
+    display: flex;
+    list-style: circle;
+    margin-left: 26px;
+}
+
+.header__links-list-item {
+    margin-right: 32px;
+}
+
+.header__links-list-item:last-child {
+    margin-right: 0;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__links-list-item_link-active {
+    text-decoration: none;
+}
+
+/*Логотип*/
+.header__logo {
+    margin-left: 36px;
+}
+
+.header__logo-image {
+    display: block;
+    background-image: url(../images/logo-black.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 148px;
+    height: 105px;
+}
+
+/*Адрес*/
+.header__address {
+    max-width: 240px;
+    width: 100%;
+    font-style: normal;
+    text-underline-position: under;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24.3px;
+    margin-left: auto;
+    margin-right: 26px;
+}
+
+/*COVER*/
+.cover {
+    margin-top: 96px;
+    background-image: url(../images/cover.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 757px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.6;
+}
