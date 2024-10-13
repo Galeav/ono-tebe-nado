@@ -10,7 +10,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    letter-spacing: 1%;
     margin-top: 45px;
 }
 
@@ -47,15 +46,18 @@
 }
 
 /*Адрес*/
-.header__address {
+.address {
     max-width: 240px;
     width: 100%;
     font-style: normal;
     text-underline-position: under;
     font-weight: normal;
     font-size: 18px;
-    margin-top: 5px;
     line-height: 24.3px;
+}
+
+.header__address {
+    margin-top: 5px;
     margin-left: auto;
     margin-right: 26px;
 }
@@ -64,26 +66,29 @@
 .cover {
     display: flex;
     flex-direction: column;
-    margin-top: 92px;
+    margin-top: 86px;
     background-image: url(../images/cover.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 757px;
+    min-height: 757px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .cover__title {
     margin: 162px auto 0;
     display: flex;
+    flex-direction: column;
     color: #FFFFFF;
     z-index: 2;
     font-size: 100px;
-    /*letter-spacing: 60%;*/
     font-weight: bold;
-    text-align: center;
     letter-spacing: 30px;
-    max-width: 1000px;
+    width: 100%;
+    text-transform: uppercase;
+    
 }
 
 .aligned-text {
@@ -92,26 +97,29 @@
 
 .aligned-text_center {
     display: block;
-    margin-left: -60px;
+    
     margin-top: 10px;
+    text-align: center;
 }
 
 .aligned-text_right {
     display: block;
-    margin-top: 13px;
-    margin-left: -104px;
+    margin-top: 6px;
+    margin-right: -62px;
+    text-align: right;
 }
 
 .letter-spacing_long {
-    margin-left: 32px;
+    letter-spacing: 60px;
+}
+
+.letter-spacing_normal {
+    letter-spacing: 30px;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     background-color: #000000;
     opacity: 0.6;
 }
@@ -129,6 +137,7 @@
     line-height: 51px;
     word-spacing: 18px;
     margin-left: 28px;
+    text-transform: uppercase;
 }
 
 .bet-button {
@@ -136,12 +145,14 @@
     height: 51px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
     padding: 0;
     margin-left: 79px;
+    text-transform: uppercase;
 }
 
 .bet-button:hover {
@@ -157,12 +168,14 @@
 .lots__heading {
     font-size: 40px;
     margin-left: 40px;
+    text-transform: uppercase;
 }
 
 .lots__card-list {
     margin: 27px auto 0;
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
     list-style-type: none;
     justify-content: space-between;
 }
@@ -187,14 +200,15 @@
     background-size: cover;
     position: relative;
     color: #FFFFFF;
-    height: 563px;
+    min-height: 563px;
     max-width: 334px;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .card__title {
     z-index: 2;
-    max-width: 254px;
     margin: 51px auto 0;
     font-size: 22px;
     text-decoration: underline;
@@ -204,7 +218,6 @@
 
 .card__text {
     z-index: 2;
-    max-width: 254px;
     margin: 0 auto 48px;
     font-size: 20px;
 }
@@ -267,30 +280,27 @@
     margin-left: 24px;
     font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 100px;
+    margin-left: 24px;
 }
 
 .about__text {
-    margin-top: 100px;
-    margin-left: 24px;
     font-size: 20px;
 }
 
 /*FOOTER*/
 .footer {
     display: flex;
-    margin: 180px auto 0;
+    margin: 180px auto 88px;
     max-width: 1000px;
     justify-content: space-between;
-}
-
-.footer__address {
-    max-width: 240px;
-    width: 100%;
-    font-style: normal;
-    text-underline-position: under;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24.3px;
 }
 
 .footer__list-links {
@@ -320,24 +330,20 @@
 
 }*/
 
-.footer__link-youTube {
+.footer__soc-card {
     display: block;
-    background-image: url(../images/yt.svg);
     width: 48px;
     height: 48px;
-    
+}
+
+.footer__link-youTube {
+    background-image: url(../images/yt.svg);
 }
 
 .footer__link-VK {
-    display: block;
     background-image: url(../images/vk.svg);
-    width: 48px;
-    height: 48px;
 }
 
 .footer__link-pinterest {
-    display: block;
     background-image: url(../images/pinterest.svg);
-    width: 48px;
-    height: 48px;
 }
