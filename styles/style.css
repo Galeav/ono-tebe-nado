@@ -105,7 +105,6 @@
 .aligned-text_right {
     display: block;
     margin-top: 6px;
-    margin-right: -62px;
     text-align: right;
 }
 
@@ -115,6 +114,10 @@
 
 .letter-spacing_normal {
     letter-spacing: 30px;
+}
+
+.letter-spacing_none {
+    letter-spacing: 0;
 }
 
 .overlay {
